@@ -5,11 +5,11 @@ defmodule PhoenixMicrosoftbot.Mixfile do
     [app: :phoenix_microsoftbot,
      version: "1.0.0",
      elixir: "~> 1.3",
-     description: description,
+     description: description(),
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     package: package,
-     deps: deps]
+     package: package(),
+     deps: deps()]
   end
 
   def description do
